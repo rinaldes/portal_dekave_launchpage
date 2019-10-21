@@ -1,24 +1,15 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+20 October 2019, 
+Start Project
 
-Things you may want to cover:
+21 October 2019,
+Push pertama ke git
 
-* Ruby version
+Target
 
-* System dependencies
+21 October 2019,
+Backend Done
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+22 October 2019,
+First Launch
