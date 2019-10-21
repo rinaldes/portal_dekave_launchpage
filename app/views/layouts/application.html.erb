@@ -11,5 +11,26 @@
 
   <body>
     <%= yield %>
+
+    <!-- PopUp -->
+    <div id="kirim" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-body">
+            <h4 class="modal-title">Ets... Langkah Terakhir</h4>
+            <p>Kasih tau email kamu, supaya kami bisa ngabarin info keren dan solusinya ya..</p>
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="email@kamu.com" aria-label="email_kamu" aria-describedby="basic-addon2">
+              <div class="input-group-append">
+                <button class="btn btn-outline-secondary" type="button" data-dismiss="modal">Kirim</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
   </body>
 </html>
