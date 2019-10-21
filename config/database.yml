@@ -1,0 +1,21 @@
+default: &default
+  host: 127.0.0.1
+  adapter: postgresql
+  encoding: unicode
+  username: postgres
+  password: admin
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  database: nasi_padang_meluncurlah
+
+test:
+  <<: *default
+  database: coba_nasi_padang_meluncur
+
+#production:
+#  <<: *default
+#  database: nasi_padang_dijual
+#  username: app_username
+#  password: <%= ENV['APP_DATABASE_PASSWORD'] %>
