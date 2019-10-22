@@ -15,6 +15,7 @@
                     Kalau kamu ingin membantu kami lebih jauh kamu <biru>bisa email kami</biru> masalah 
                     apa saja yang sering dialami kamu para pelaku dunia kreatif, yaa..
                 <p>
+                <a href="http://127.0.0.1:3000" hidden></a>
             </div>
         </div>
         <div class="col-lg-4">
@@ -22,3 +23,8 @@
         </div>
     </div>
 </div>
+<script>
+    window.setTimeout(function() {
+        location.href = document.getElementsByTagName("a")[0].href;
+    }, 3000);
+</script>
