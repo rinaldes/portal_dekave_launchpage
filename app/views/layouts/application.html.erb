@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>NasiPadaLaunch</title>
+    <title>Portal Dekave</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -11,26 +11,61 @@
 
   <body>
     <%= yield %>
-
-    <!-- PopUp -->
+            
+      <!-- PopUp -->
     <div id="kirim" class="modal fade" role="dialog">
-      <div class="modal-dialog">
-
-        <!-- Modal content-->
-        <div class="modal-content">
-          <div class="modal-body">
-            <h4 class="modal-title">Ets... Langkah Terakhir</h4>
-            <p>Kasih tau email kamu, supaya kami bisa ngabarin info keren dan solusinya ya..</p>
-            <div class="input-group mb-3">
-              <input type="text" class="form-control" placeholder="email@kamu.com" aria-label="email_kamu" aria-describedby="basic-addon2">
-              <div class="input-group-append">
-                <button class="btn btn-outline-secondary" type="button" data-dismiss="modal">Kirim</button>
+      <%= form_for @sub, html: {class: "smart-form", id: "form-update-verify", :autocomplete => "off"} do |f| %>
+        <fieldset>
+          <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-body">
+                <h4 class="modal-title">Ets... Langkah Terakhir</h4>
+                <p>Kasih tau email kamu, supaya kami bisa ngabarin info keren dan solusinya ya..</p>
+                <div class="input-group mb-3">
+                  <%= f.text_field :email, class: "form-control", placeholder: "email@kamu.com" %>
+                  <%= f.hidden_field :masalah, value: "00000" %>
+                  <div class="input-group-append">
+                    <%= f.submit "Kirim", class: "btn btn-outline-secondary", onclick: "emailku()"%>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-
-      </div>
+        </fieldset>
+      <% end %>
     </div>
+
+    <script>
+      function bermasalah(){
+        var ms1, ms2, m3, ms4, ms5;
+        if (document.getElementById('ms1').checked) {
+          ms1 = "1";
+        } else {
+          ms1 = "0";
+        }
+        if (document.getElementById('ms2').checked) {
+          ms2 = "1";
+        } else {
+          ms2 = "0";
+        }
+        if (document.getElementById('ms3').checked) {
+          ms3 = "1";
+        } else {
+          ms3 = "0";
+        }
+        if (document.getElementById('ms4').checked) {
+          ms4 = "1";
+        } else {
+          ms4 = "0";
+        }
+        if (document.getElementById('ms5').checked) {
+          ms5 = "1";
+        } else {
+          ms5 = "0";
+        }
+      document.getElementById('sub_masalah').value = ms1 + ms2 + ms3 + ms4 + ms5;
+    } 
+    </script>
   </body>
 </html>
