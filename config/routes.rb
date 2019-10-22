@@ -5,4 +5,8 @@ Rails.application.routes.draw do
   get 'terimakasih', :to => 'subs#selesai'
   resources :subs
 
+   # error pages
+   %w( 404 422 500 503 ).each do |code|
+    get 'error', :to => 'subs#index'
+  end
 end

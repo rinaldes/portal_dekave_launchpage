@@ -29,59 +29,73 @@
         </div>
     </div>
     <div class="row kolom_tiga">
-        <div class="col-lg-12">
-            <div class="row">
-                <div class="col-lg-4">
-                    <h4>Bambang</h4>
-                    <p>
-                        "Bagus.. Mantap.. Super.. debestlah pokoknya.."
-                    </p>
+        <div class="col-lg-12 kahandap_saetik_pisan">
+            <div class="row" style="margin-left: 5em">
+                <div class="col-lg-4 row">
+                    <div class="col-lg-5">
+                        <%= image_tag(asset_path('male-shadow-circle-512.png'), size: "150") %>
+                    </div>
+                    <div class="col-lg-7">
+                        <h4 class="kahandap_saetik_pisan">Bambang</h4>
+                        <p>
+                            "Bagus.. Mantap.. Super.. debestlah pokoknya.."
+                        </p>
+                    </div>
                 </div>
-                <div class="col-lg-4">
-                    <h4>Hartono</h4>
-                    <p>
-                        "Bagus.. Mantap.. Super.. debestlah pokoknya.."
-                    </p>
+                <div class="col-lg-4 row">
+                    <div class="col-lg-5">
+                        <%= image_tag(asset_path('male-shadow-circle-512.png'), size: "150") %>
+                    </div>
+                    <div class="col-lg-7">
+                        <h4 class="kahandap_saetik_pisan">Rudi</h4>
+                        <p>
+                            "Bagus.. Mantap.. Super.. debestlah pokoknya.."
+                        </p>
+                    </div>
                 </div>
-                <div class="col-lg-4">
-                    <h4>Suep</h4>
-                    <p>
-                        "Bagus.. Mantap.. Super.. debestlah pokoknya.."
-                    </p>
+                <div class="col-lg-4 row">
+                    <div class="col-lg-5">
+                        <%= image_tag(asset_path('male-shadow-circle-512.png'), size: "150") %>
+                    </div>
+                    <div class="col-lg-7">
+                        <h4 class="kahandap_saetik_pisan">Hartono</h4>
+                        <p>
+                            "Bagus.. Mantap.. Super.. debestlah pokoknya.."
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <div class="row kolom_opat">
         <div class="col-lg-1"></div>
-        <div class="col-lg-5 kahandap_saetik">
+        <div class="col-lg-4 kahandap_saetik">
             <div class= "kata_persuasif ketengahan_atuh">
-                <h1>Kami akan beri kamu <b>Solusi</b>!</h1>
+                <h2>Kami akan beri kamu <b>Solusi</b>!</h2>
                 <br>
                 <p>
                     Beritahu dulu masalah apa saja yang kamu alami disamping, kamu boleh memilih lebih dari satu masalah.
                 <p>
             </div>
         </div>
-
-        <div class="col-lg-6 kahandap_saetik">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-6 kahandap_saetik_deui">
             <div class="kata_persuasif">
                 <div class="checkbox">
-                    <label><input id="ms1" type="checkbox" onchange="bermasalah()"> Masalah? Apa itu?</label>
+                    <label><input id="ms1" class="checkbox checkbox-bulet" type="checkbox" onchange="bermasalah()"> &nbsp;Masalah? Apa itu?</label>
                 </div>
                 <div class="checkbox">
-                    <label><input id="ms2" type="checkbox" onchange="bermasalah()"> Masalah adalah makananku sehari hari.. HUAHAHAHAHA</label>
+                    <label><input id="ms2" class="checkbox checkbox-bulet" type="checkbox" onchange="bermasalah()"> &nbsp;Masalah adalah makananku sehari hari.. HUAHAHAHAHA</label>
                 </div>
                 <div class="checkbox">
-                    <label><input id="ms3" type="checkbox" onchange="bermasalah()"> HAHAHAHAHAHAHAHAHAHAHAHAHA</label>
+                    <label><input id="ms3" class="checkbox checkbox-bulet" type="checkbox" onchange="bermasalah()"> &nbsp;HAHAHAHAHAHAHAHAHAHAHAHAHA</label>
                 </div>
                 <div class="checkbox">
-                    <label><input id="ms4" type="checkbox" onchange="bermasalah()"> HAHAHAHAHAHAHAHAHAHAHAHAHA</label>
+                    <label><input id="ms4" class="checkbox checkbox-bulet" type="checkbox" onchange="bermasalah()"> &nbsp;HAHAHAHAHAHAHAHAHAHAHAHAHA</label>
                 </div>
                 <div class="checkbox">
-                    <label><input id="ms5" type="checkbox" onchange="bermasalah()"> HAHAHAHAHAHAHAHAHAHAHAHAHA</label>
+                    <label><input id="ms5" class="checkbox checkbox-bulet" type="checkbox" onchange="bermasalah()"> &nbsp;HAHAHAHAHAHAHAHAHAHAHAHAHA</label>
                 </div>
-                <br>
                 <div class="button">
                     <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#kirim">Kirim</button>
                 </div>
@@ -98,7 +112,7 @@
         <!-- Modal content-->
         <div class="modal-content">
             <div class="modal-body">
-            <h4 class="modal-title">Ets... Langkah Terakhir</h4>
+            <h2 class="modal-title">Ets... Langkah Terakhir</h2><br>
             <p>Kasih tau email kamu, supaya kami bisa ngabarin info keren dan solusinya ya..</p>
             <div class="input-group mb-3">
                 <%= f.text_field :email, class: "form-control", placeholder: "email@kamu.com" %>

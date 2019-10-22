@@ -1,3 +1,18 @@
+.checkbox-bulet {
+    width: 1.8em;
+    height: 1.8em;
+    background-color: white;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+    -webkit-appearance: none;
+    outline: none;
+	cursor: pointer;
+	margin-bottom: 0.2em;
+}
+.checkbox-bulet:checked {
+    background-color: gray;
+}
 .kata_persuasif {
 	color: white;
 }
@@ -9,6 +24,9 @@
 }
 .kahandap_saetik_pisan {
 	margin-top: 5%;
+}
+.kahandap_saetik_deui {
+	margin-top: 6%;
 }
 .kotak_gambar{
 	width: 90%;
