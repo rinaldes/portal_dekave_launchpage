@@ -11,31 +11,7 @@
 
   <body>
     <%= yield %>
-            
-      <!-- PopUp -->
-    <div id="kirim" class="modal fade" role="dialog">
-      <%= form_for @sub, html: {class: "smart-form", id: "form-update-verify", :autocomplete => "off"} do |f| %>
-        <fieldset>
-          <div class="modal-dialog">
-            <!-- Modal content-->
-            <div class="modal-content">
-              <div class="modal-body">
-                <h4 class="modal-title">Ets... Langkah Terakhir</h4>
-                <p>Kasih tau email kamu, supaya kami bisa ngabarin info keren dan solusinya ya..</p>
-                <div class="input-group mb-3">
-                  <%= f.text_field :email, class: "form-control", placeholder: "email@kamu.com" %>
-                  <%= f.hidden_field :masalah, value: "00000" %>
-                  <div class="input-group-append">
-                    <%= f.submit "Kirim", class: "btn btn-outline-secondary", onclick: "emailku()"%>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </fieldset>
-      <% end %>
-    </div>
-
+    
     <script>
       function bermasalah(){
         var ms1, ms2, m3, ms4, ms5;

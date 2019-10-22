@@ -10,11 +10,17 @@ class SubsController < ApplicationController
     def create
       @sub = Sub.new(sub_params)
       if @sub.save
-        flash[:notice] = 'Sub was successfully created.'
-        redirect_to subs_path
+        flash[:notice] = 'New Subscriber Listed'
+        redirect_to "/terimakasih"
       else
         flash[:error] = @sub.errors.full_messages.join('<br/>')
-        redirect_to subs_path
+        redirect_to root_path
+      end
+    end
+
+    def selesai
+      respond_to do |format|
+        format.html
       end
     end
 
