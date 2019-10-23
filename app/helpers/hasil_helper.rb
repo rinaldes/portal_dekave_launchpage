@@ -1,0 +1,2 @@
+module HasilHelper
+end

@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   root 'subs#index'
 
   get 'terimakasih', :to => 'subs#selesai'
+  get 'laporan', :to => 'hasil#index'
   resources :subs
 
    # error pages
