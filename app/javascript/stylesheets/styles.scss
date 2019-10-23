@@ -27,7 +27,9 @@
 	width: 25px;
 	background-color: #eee;
 }
-
+.btn-primary {
+    background-color: #fba321;
+    }
 .cekbox:hover input ~ .ceklis {
 	background-color: #ccc;
 }
@@ -62,46 +64,133 @@
 }
 .ketengahan_atuh {
 	margin: auto;
+	height: 100%;
 }
 .kahandap_saetik {
-	margin-top: 8%;
+	margin-top: 5%;
 }
 .kahandap_saetik_pisan {
-	margin-top: 5%;
+	margin-top: 3.7%;
+	margin-bottom: 2.5%;
 }
 .kahandap_saetik_deui {
 	margin-top: 6%;
 }
 .kotak_gambar{
-	width: 90%;
-	padding-bottom: 50%;
-	background: gray;
+	width: 80%;
+	margin-top:-40px;
+	-webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
 }
 .kotak_gambar2{
-	width: 90%;
-	padding-bottom: 40%;
-	background: gray;
+	width: 100%;
+    /* padding-bottom: 40%; */
+    /* background: gray; */
+    height: 100%;
+}
+#logopd{
+    float: right;
+    margin-bottom: 30px;
+    padding-right: 4%;
+    margin-top: 20px;
+ }
+.gambar_nempel{
+	    width: 100%;
+    position: absolute;
+    -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
 }
 .kolom_hiji{
-	height: 665px; 
-	background-color:#515151;
+	height: 100vh;
+    background-color: #036caf;
+ 	background-image:url("/assets/l3.svg");
+    background-attachment: fixed;
+    background-size: cover;
 }
 .kolom_dua{
-	height: 400px; 
+	height: 70vh;
 	background-color:#b8b8b8;
+		background-image: url("/assets/l3-b.svg");
+    background-attachment: fixed;
+    background-size: cover;
 }
 .kolom_tiga{
-	height: 250px; 
-	background-color:#ebe8e8;
+    height: max-content;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #ebe8e8;
+    padding-left: 4%;
+    padding-right: 4%;
 }
 .kolom_opat{
-	height: 400px; 
 	background-color:#0d9caf;
+		background-image: url("/assets/l2.svg");
+    background-attachment: fixed;
+    background-size: cover;
+    height: max-content;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    padding-left: 4%;
+    padding-right: 4%;
 }
+
 .kolom_akhir{
-	height: 130px; 
+	 height: max-content;
 	background-color:#4d4d4d;
 }
+
 biru{
 	color: blue
 }
+.modal-title {
+	font-size: 1.5rem;
+}
+.z_gambar{
+    position: absolute;
+    margin-top: -80px;
+    }
+    
+.kata_persuasif  p{
+    margin-right: 60px;
+    }
+
+.kata_persuasif  h1 {
+	margin-right: 10px;
+	}
+
+/*Perbaiki responsif*/
+@media only screen and (max-width: 1180px) {
+    .z_gambar{
+    margin-top: 5vh;}
+}
+
+@media only screen and (max-width: 920px) {    
+	.z_gambar{
+    margin-top: 30vh;}
+ }
+ 
+ @media only screen and (max-width: 991px) {    
+    .kotak_gambar {
+       width: 40%;
+    margin-top: -20vh;
+    float: right;
+    }
+    #logopd {
+    margin-bottom: 60px;
+    width: 20%;
+    margin-top: 0px;
+	}
+	.kolom_opat{
+    padding-top: 20px;
+	}
+}
+@media only screen and (max-width: 675px) {    
+	.z_gambar{
+    margin-top: 40vh;}
+ }

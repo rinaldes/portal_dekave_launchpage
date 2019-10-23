@@ -1,5 +1,8 @@
 <div class="container-fluid">
     <div class="row kolom_hiji">
+                    
+  <%= image_tag(asset_path('l1.svg'), :class => "z_gambar") %>
+
         <div class="col-lg-1"></div>
         <div class="col-lg-5 kahandap_saetik">
             <div class= "w-75 kata_persuasif ketengahan_atuh">
@@ -15,22 +18,23 @@
         </div>
         <div class="col-lg-6 kahandap_saetik">
             <div class="ketengahan_atuh">
-                <div class="kotak_gambar">
-                </div>
+                    <%= image_tag(asset_path('ilus1.svg'), :onmouseover => "this.src='" + asset_path('ilus2.svg') + "'",  :onmouseout => "this.src='" + asset_path('ilus1.svg') + "'", :class => "kotak_gambar") %>
+                    
             </div>
-        </div>
+        </div> 
+
     </div>
     <div class="row kolom_dua">
         <div class="col-lg-12">
             <div class="w-75 ketengahan_atuh">
-                <div class="kotak_gambar2">
-                </div>
+                    <iframe class="kotak_gambar2" src="http://www.youtube.com/embed/GRonxog5mbw?autoplay=1&showinfo=0&controls=0&loop=1&playlist=GRonxog5mbw" frameborder="0" allowfullscreen></iframe>
+            
             </div>
         </div>
     </div>
     <div class="row kolom_tiga">
         <div class="col-lg-12 kahandap_saetik_pisan">
-            <div class="row" style="margin-left: 5em">
+            <div class="row">
                 <div class="col-lg-4 row">
                     <div class="col-lg-5">
                         <%= image_tag(asset_path('male-shadow-circle-512.png'), size: "150") %>
@@ -112,7 +116,7 @@
         <div class="col-lg-10 kahandap_saetik">
         </div>
         <div class="col-lg-2 ">
-            <%= image_tag(asset_path('dkv.png')) %>            
+            <%= image_tag(asset_path('pd_bwlogo.svg'), :id => "logopd") %>            
         </div>
     </div>
 </div>
