@@ -66,6 +66,9 @@
 	margin: auto;
 	height: 100%;
 }
+.ketengahan_atuh2 {
+	margin: auto;
+}
 .kahandap_saetik {
 	margin-top: 5%;
 }
@@ -114,11 +117,12 @@
     background-size: cover;
 }
 .kolom_dua{
-	height: 70vh;
 	background-color:#b8b8b8;
-		background-image: url("/assets/l3-b.svg");
+	background-image: url("/assets/l3-b.svg");
     background-attachment: fixed;
     background-size: cover;
+    height: 80vh;
+    padding: 40px;
 }
 .kolom_tiga{
     height: max-content;
@@ -127,6 +131,8 @@
     background-color: #ebe8e8;
     padding-left: 4%;
     padding-right: 4%;
+    visibility: hidden;
+    display: none;
 }
 .kolom_opat{
 	background-color:#0d9caf;
@@ -145,9 +151,13 @@
 	background-color:#4d4d4d;
 }
 
-biru{
-	color: blue
+.kuning{
+	color: #f4e53f;
+    font-weight: bold;
 }
+.kuning:hover{
+	color: #fff;
+	}
 .modal-title {
 	font-size: 1.5rem;
 }
