@@ -182,37 +182,10 @@
 
 
 /*Perbaiki responsif*/
-@media only screen and (max-width: 1180px) {
-    .z_gambar{
-    margin-top: 5vh;}
-}
 
-@media only screen and (max-width: 920px) {    
- .z_gambar{
-    margin-top: 30vh;}
- }
  
- @media only screen and (max-width: 991px) {    
-    .kotak_gambar {
-       width: 40%;
-    margin-top: -20vh;
-    float: right;
-    }
-    #logopd {
-    margin-bottom: 60px;
-    width: 20%;
-    margin-top: 0px;
- }
- .kolom_opat{
-    padding-top: 20px;
- }
-}
-@media only screen and (max-width: 675px) {    
- .z_gambar{
-    margin-top: 60vh;}
-    padding-top: 20px;
-    padding-bottom: 20px
- }
+
+
  .kolom_dua, .kolom_hiji {
     background-position-x: right;
 }
@@ -223,11 +196,6 @@
     font-size: unset;
 }
 
-@media only screen and (max-width: 480px){
- .kolom_dua {
-    height: 40vh;
-    padding: 20px 0px 20px 0px;
-}
 .kolom dua .col-lg-12 {padding:0;}
 .z_gambar {
     margin-top: 70vh;
@@ -243,27 +211,69 @@
     font-size: unset;
 }
 }
-@media only screen and (max-width: 400px){
-.kata_persuasif h1 {
-    margin-right: 10px;
-    font-size: 1.6rem;
-}
-}
-@media only screen and (max-width: 380px){
-    .z_gambar {
-        margin-top: 70vh;
-    }
-}
 @media only screen and (max-width: 1080px){
     .z_gambar {
         margin-top: 70vh;
     }
 }
+
+@media only screen and (max-width: 1180px) {
+    .z_gambar{
+    margin-top: 5vh;}
+}
+
+@media only screen and (max-width: 991px) {    
+    .kotak_gambar {
+       width: 40%;
+    margin-top: -20vh;
+    float: right;
+    }
+    #logopd {
+    margin-bottom: 60px;
+    width: 20%;
+    margin-top: 0px;
+ }
+ .kolom_opat{
+    padding-top: 20px;
+ }
+}
+@media only screen and (max-width: 920px) {    
+ .z_gambar{
+    margin-top: 30vh;}
+ }
 /* Anyar */
+@media only screen and (max-width: 675px) {    
+    .z_gambar{
+       margin-top: 60vh;}
+       padding-top: 20px;
+       padding-bottom: 20px
+    }
 @media only screen and (max-width: 520px){
+    .z_gambar {
+        margin-top: 56vh;
+    }}
+
+@media only screen and (max-width: 480px){
+    .kolom_dua {
+        height: 40vh;
+        padding: 20px 0px 20px 0px;
+    }    
+@media only screen and (max-width: 416px){
 .z_gambar {
-    margin-top: 56vh;
-}}
+    margin-top: 69vh;
+}
+}
+@media only screen and (max-width: 400px){
+    .kata_persuasif h1 {
+        margin-right: 10px;
+        font-size: 1.6rem;
+    }
+    }
+@media only screen and (max-width: 380px){
+    .z_gambar {
+        margin-top: 70vh;
+    }
+}
 
 @media only screen and (max-width: 370px){
 .z_gambar {
