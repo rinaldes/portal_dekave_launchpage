@@ -178,6 +178,9 @@
 	margin-right: 10px;
 	}
 
+/* ANYAR */
+
+
 /*Perbaiki responsif*/
 @media only screen and (max-width: 1180px) {
     .z_gambar{
@@ -185,7 +188,7 @@
 }
 
 @media only screen and (max-width: 920px) {    
-	.z_gambar{
+ .z_gambar{
     margin-top: 30vh;}
  }
  
@@ -199,80 +202,42 @@
     margin-bottom: 60px;
     width: 20%;
     margin-top: 0px;
-	}
-	.kolom_opat{
+ }
+ .kolom_opat{
     padding-top: 20px;
-	}
+ }
 }
 @media only screen and (max-width: 675px) {    
-	.z_gambar{
+ .z_gambar{
     margin-top: 40vh;}
  }
-@media only screen and (max-width: 480px) {
-    .kolom_dua {
-        height: 40vh;
-        max-height: 550px;
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
 
-    .z_gambar {
-        margin-top: 70vh;
-    }
-
-    #logopd {
-        margin-bottom: 80px;
-        width: 40%;
-    }
-
-    .kolom_hiji {
-        background-position-x: center;
-    }
-
-    .cekbox {
-        font-size: unset;
-    }
+@media only screen and (max-width: 480px){
+ .kolom_dua {
+    height: 40vh;
+    max-height: 550px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.z_gambar {
+    margin-top: 70vh;
+}
+#logopd {
+    margin-bottom: 80px;
+    width: 40%;
+}
+.kolom_hiji {
+    background-position-x: center;
+}
+.cekbox {
+    font-size: unset;
+}
+}
+@media only screen and (max-width: 400px){
+.kata_persuasif h1 {
+    margin-right: 10px;
+    font-size: 1.6rem;
+}
 }
 
-@media only screen and (max-width: 400px) {
-    .kata_persuasif h1 {
-        margin-right: 10px;
-        font-size: 1.6rem;
-    }
-}
-@media only screen and (min-device-width: 1020px) and (min-device-height: 1366px) {
-    .kolom_hiji {
-        height: 50vh;
-    }
-}
-@media only screen and (min-device-width: 640px) and (max-device-height: 380px) {
-    .z_gambar {
-        margin-top: 1vh;
-    }
-
-    .kolom_dua {
-        height: 90vh;
-    }
-
-    .kotak_gambar {
-        margin-top: -42vh;
-    }
-
-    .kata_persuasif h1 {
-        margin-right: 60px;
-        font-size: 1.5rem;
-    }
-
-    .kata_persuasif p {
-        margin-right: 120px;
-        font-size: 0.8rem;
-    }
-}
-
-@media only screen and (min-device-width: 640px) and (max-device-height: 300px) {
-    .kotak_gambar {
-        width: 40%;
-        margin-top: -62vh;
-        float: right;
-    }
-}
+/* Anyar */

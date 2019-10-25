@@ -41,7 +41,12 @@
         } else {
           ms5 = "0";
         }
-      document.getElementById('sub_masalah').value = ms1 + ms2 + ms3 + ms4 + ms5;
+        if (document.getElementById('ms6').checked) {
+          ms6 = "1";
+        } else {
+          ms6 = "0";
+        }
+      document.getElementById('sub_masalah').value = ms1 + ms2 + ms3 + ms4 + ms5 + ms6;
     } 
     </script>
   </body>
