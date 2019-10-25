@@ -246,8 +246,24 @@
     font-size: 1.6rem;
 }
 }
-@media only screen and (max-width: 380px)
+@media only screen and (max-width: 380px){
+    .z_gambar {
+        margin-top: 70vh;
+    }
+}
+@media only screen and (max-width: 1080px){
+    .z_gambar {
+        margin-top: 70vh;
+    }
+}
+/* Anyar */
+@media only screen and (max-width: 520px){
+.z_gambar {
+    margin-top: 56vh;
+}}
+
+@media only screen and (max-width: 370px){
 .z_gambar {
     margin-top: 70vh;
 }
-/* Anyar */
+}
