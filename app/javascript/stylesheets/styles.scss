@@ -8,7 +8,7 @@
 	-webkit-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
-	user-select: none;
+    user-select: none;
 }
 
 .judul_laporan {
@@ -209,16 +209,23 @@
 }
 @media only screen and (max-width: 675px) {    
  .z_gambar{
-    margin-top: 40vh;}
+    margin-top: 60vh;}
+    padding-top: 20px;
+    padding-bottom: 20px
  }
+ .kata_persuasif h1 {
+    font-size: 1.5rem;
+}
+.cekbox {
+    font-size: unset;
+}
 
 @media only screen and (max-width: 480px){
  .kolom_dua {
     height: 40vh;
-    max-height: 550px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 20px 0px 20px 0px;
 }
+.kolom dua .col-lg-12 {padding:0;}
 .z_gambar {
     margin-top: 70vh;
 }
