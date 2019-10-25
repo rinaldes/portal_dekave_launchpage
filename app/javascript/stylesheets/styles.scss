@@ -178,14 +178,6 @@
 	margin-right: 10px;
 	}
 
-/* ANYAR */
-
-
-/*Perbaiki responsif*/
-
- 
-
-
  .kolom_dua, .kolom_hiji {
     background-position-x: right;
 }
@@ -197,7 +189,7 @@
 }
 
 .kolom dua .col-lg-12 {padding:0;}
-.z_gambar {
+.z_gambar {  position: absolute;
     margin-top: 70vh;
 }
 #logopd {
@@ -210,11 +202,14 @@
 .cekbox {
     font-size: unset;
 }
+
+.kolom_dua, .kolom_hiji {
+    background-position-x: center !important;
 }
-@media only screen and (max-width: 1080px){
-    .z_gambar {
-        margin-top: 70vh;
-    }
+
+.z_gambar {  
+    position: absolute;
+    bottom:0;
 }
 
 @media only screen and (max-width: 1180px) {
@@ -237,31 +232,27 @@
     padding-top: 20px;
  }
 }
-@media only screen and (max-width: 920px) {    
- .z_gambar{
-    margin-top: 30vh;}
- }
+
 /* Anyar */
 @media only screen and (max-width: 675px) {    
     .z_gambar{
-       margin-top: 60vh;}
+       margin-top: 60vh;
        padding-top: 20px;
        padding-bottom: 20px
     }
-@media only screen and (max-width: 520px){
-    .z_gambar {
-        margin-top: 56vh;
-    }}
+}
 
 @media only screen and (max-width: 480px){
     .kolom_dua {
         height: 40vh;
         padding: 20px 0px 20px 0px;
     }    
-@media only screen and (max-width: 416px){
-.z_gambar {
-    margin-top: 69vh;
 }
+@media only screen and (max-width: 416px){
+
+.kolom_dua {
+    height: 300px;
+ }
 }
 @media only screen and (max-width: 400px){
     .kata_persuasif h1 {
@@ -269,14 +260,3 @@
         font-size: 1.6rem;
     }
     }
-@media only screen and (max-width: 380px){
-    .z_gambar {
-        margin-top: 70vh;
-    }
-}
-
-@media only screen and (max-width: 370px){
-.z_gambar {
-    margin-top: 70vh;
-}
-}
